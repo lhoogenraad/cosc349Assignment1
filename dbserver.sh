@@ -22,7 +22,7 @@ echo "CREATE USER 'webuser'@'%' IDENTIFIED BY 'db_pw';" | mysql
 echo "GRANT ALL PRIVILEGES ON examanswers.* TO 'webuser'@'%'" | mysql
 
 # Sets the shell variable from the start of the script to the non-admin password
-export MYSQL_PWD = 'db_pw'
+export MYSQL_PWD='db_pw'
 
 # This line makes it so mysql will listen to any network requests
 # (by default it will only listen for local network requests)
