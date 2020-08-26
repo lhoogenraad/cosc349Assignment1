@@ -23,5 +23,19 @@ Vagrant.configure("2") do |config|
 	# This line calls our shell script to set up our vm when it boots
 	display.vm.provision "shell", path: "display.sh"
   end
+  # This VM defines the vm that will save data
+  # from the input pge to a mysql database
+  config.vm.define "dbserver" do |dbserver|
+	# This is the name of this vm
+	dbserver.vm.hostname = "dbserver"
 	
+	# This network is our private network where the vm's will communicate
+	dbserver.vm.network "private_network", ip: "192.168.2.12"
+	
+	# This is where we set up our synced folders on our physical machine
+	dbserver.vm.synced_folder ".", "/vagrant", group: "vagrant", mount_options: ["dmode=775,fmode=777"]
+	
+	# This line calls our shell script to set up our vm when it boots
+	dbserver.vm.provision "shell", path: "dbserver.sh"
+  end
 end
