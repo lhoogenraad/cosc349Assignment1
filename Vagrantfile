@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
 	display.vm.network "private_network", ip: "192.168.2.11"
 	
 	# This is where we set up our synced folders on our physical machine
-	display.vm.synced_folder: ".", "/vagrant", group: "vagrant", mount_options ["dmode=775,fmode=777"]
+	display.vm.synced_folder ".", "/vagrant", group: "vagrant", mount_options: ["dmode=775,fmode=777"]
 	
 	# This line calls our shell script to set up our vm when it boots
 	display.vm.provision "shell", path: "display.sh"
