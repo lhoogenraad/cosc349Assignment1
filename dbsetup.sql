@@ -9,7 +9,7 @@ CREATE TABLE answers (
 INSERT INTO answers VALUES ('HIST106', '2019', '3', 'Metropolitan', 'HOOLE857');
 INSERT INTO answers VALUES ('HIST106', '2019', '5', 'Internal conflict', 'HOOLE857');
 INSERT INTO answers VALUES ('HIST106', '2019', '1', 'Trade, Culture and Religion', 'HOOLE857');
-INSERT INTO answers VALUES ('HIST108', '2015', '2', 'Extensive', 'MCCAD123');
+INSERT INTO answers VALUES ('HIST108', '2015', '2', 'Extensive', NULL);
 INSERT INTO answers VALUES ('HIST108', '2015', '4', 'Economy and Technology', 'WALAM543');
 INSERT INTO answers VALUES ('COMP150', '2013', '8', 'E', 'WALMA430');
 INSERT INTO answers VALUES ('COMP150', '2013', '4', 'A', 'KINST520');
