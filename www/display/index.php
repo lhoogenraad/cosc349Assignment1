@@ -37,9 +37,9 @@ $q = $pdo->query("SELECT * FROM ANSWERS");
 while($row = q->fetch()){
   echo "<tr><td>".$row["code"]."</td><td>".$row["year"]."</td><td>".$row.["question"]."</td><td>".$row["answer"]."</td>";
   if(is_null($row["username"])){
-    echo "<td>".$row["username"]."</td></tr>"];
+    echo "<td>".$row["username"]."</td></tr>\n";
   }else{
-    echo "<td>Not given</td></tr>"
+    echo "<td>Not given</td></tr>\n"
   }
 }
 ?>
