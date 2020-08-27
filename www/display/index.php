@@ -21,28 +21,7 @@ padding: 0.2em;
 
 <table border="1">
 <tr><th>Paper Code</th><th>Exam Year</th><th>Exam Question</th><th>Answer</th><th>University Username (optional)</th></tr>
-<?php
 
-$db_host = '192.168.2.12';
-$db_name = 'fvision';
-$db_user = 'webuser';
-$db_passwd = 'db_pw';
-
-$pdo_dsn = "mysql:host=$db_host; dbname=$db_name";
-
-$pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
-
-$q = $pdo->query("SELECT * FROM ANSWERS");
-
-while($row = q->fetch()){
-echo "<tr><td>".$row["code"]."</td><td>".$row["year"]."</td><td>".$row.["question"]."</td><td>".$row["answer"]."</td>";
-if(is_null($row.username)){
-echo "<td>".$row["username"."</td></tr>"];
-}else{
-echo "<td>Not given</td></tr>"
-}
-}
-?>
 </table>
 
 </body>
