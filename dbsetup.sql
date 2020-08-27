@@ -1,7 +1,7 @@
 CREATE TABLE answers (
-	code varchar(6) NOT NULL,
-	year varchar(4) NOT NULL,
-	question varchar(4) NOT NULL,
+	code varchar(9) NOT NULL,
+	year varchar(5) NOT NULL,
+	question varchar(5) NOT NULL,
 	answer varchar(250) NOT NULL,
 	username varchar(10)
 );
