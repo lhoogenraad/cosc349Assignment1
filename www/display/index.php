@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <html>
 <head>
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
   <title>Past Otago exam answers</title>
 <style>
 th { text-align: left; }
