@@ -24,6 +24,10 @@ echo "GRANT ALL PRIVILEGES ON examanswers.* TO 'webuser'@'%'" | mysql
 # Sets the shell variable from the start of the script to the non-admin password
 export MYSQL_PWD='db_pw'
 
+# Here we are copying our schema into mysql so that our tables
+# and data are created
+cat /vagrant/dbsetup.sql | mysql -u webuser examanswers
+
 # This line makes it so mysql will listen to any network requests
 # (by default it will only listen for local network requests)
 sed -i'' -e '/bind-address/s/127.0.0.1/0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf
