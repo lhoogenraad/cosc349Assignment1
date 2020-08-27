@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <html>
-<head><title></title>
+<head>
+  <title>Past Otago exam answers</title>
 <style>
 th { text-align: left; }
 
