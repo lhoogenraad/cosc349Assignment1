@@ -4,7 +4,7 @@ CREATE TABLE answers (
 	question varchar(4) NOT NULL,
 	answer varchar(250) NOT NULL,
 	username varchar(10)
-)
+);
 
 INSERT INTO answers VALUES ('HIST106', '2019', '3', 'Metropolitan', 'HOOLE857');
 INSERT INTO answers VALUES ('HIST106', '2019', '5', 'Internal conflict', 'HOOLE857');
