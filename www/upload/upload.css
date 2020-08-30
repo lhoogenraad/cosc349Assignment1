@@ -3,7 +3,7 @@ h1{
 	text-colour: #9aa1ff;
 	border: 3px solid #9aa1ff;
 	margin: auto;
-	width: 50%;
+	width: 75%;
 	margin-bottom: 15px;
 	margin-top: 15px;
 	background-color: #f9c000;
@@ -14,4 +14,26 @@ form{
 	text-align: center;
 	border: 3px solid black;
 	border-readius: 15px;
+	margin: auto;
+	width: 75%;
+	background-color: #fffac4;
+}
+
+input{
+	float: left;
+	padding: 5px;
+	width: 50%;
+		
+}
+
+a{
+        float: left;
+        margin-top: 25px;
+        font-size: 18px;
+        text-decoration: none;
+        background-color: #f9c000;
+        color: #333333;
+        padding: 2px 6px 2px 6px;
+        border: 1px solid #9aa1ff;
+        border-radius: 5px;
 }

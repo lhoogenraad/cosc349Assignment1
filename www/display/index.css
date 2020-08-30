@@ -4,6 +4,7 @@ th {
 
 table{
     width: 95%;
+	border-radius: 5px;
 }
 
 table, th, td {
@@ -13,7 +14,7 @@ table, th, td {
 }
 
 th, td {
-	padding: 0.2em;
+	padding: 0.5em;
 }
 
 
@@ -31,7 +32,7 @@ h1{
 a{
 	float: left;
 	margin-top: 25px;
-	font: 15px;
+	font-size: 18px;
   	text-decoration: none;
 	background-color: #f9c000;
 	color: #333333;
