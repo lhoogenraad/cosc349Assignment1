@@ -17,12 +17,13 @@
       
       $stmt = $pdo->prepare($sql);
         
-      $form = $_POST;
-      $code = $form['code'];
-      $year = $form['year'];
-      $question = $form['question'];
-      $answer = $form['answer'];
-      $username = $form['username'];
+      $code = $_POST['code'];
+      $year = $_POST['year'];
+      $question = $_POST['question'];
+      $answer = $_POST['answer'];
+      $username = $_POST['username'];
 
       $result = $stmt->execute([$code, $year, $question, $answer, $username]);
+
+      header("Location: http://127.0.0.1:8080/index.php");
     ?>
