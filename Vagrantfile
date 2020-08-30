@@ -48,7 +48,8 @@ Vagrant.configure("2") do |config|
 	upload.vm.hostname = "upload"
 	
 	# This network is where we port forward to our local loopback server
-	upload.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
+	# the host port must be different from the display VM since they would otherwise clash
+	upload.vm.network "forwarded_port", guest: 80, host: 8090, host_ip: "127.0.0.1"
 	
 	  # This network is our private network where the vm's will communicate
 	upload.vm.network "private_network", ip: "192.168.2.10"
