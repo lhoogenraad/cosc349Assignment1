@@ -1,0 +1,17 @@
+h1{
+	text-align: center;
+	text-colour: #9aa1ff;
+	border: 3px solid #9aa1ff;
+	margin: auto;
+	width: 50%;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	background-color: #f9c000;
+	padding: 4px;
+}
+
+form{
+	text-align: center;
+	border: 3px solid black;
+	border-readius: 15px;
+}
