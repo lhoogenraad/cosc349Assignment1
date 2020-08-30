@@ -20,6 +20,7 @@ th, td {
 
 
 h1{
+	border-radius: 15px;
 	text-align: center;
 	border: 3px solid #9aa1ff;
 	margin: auto;
