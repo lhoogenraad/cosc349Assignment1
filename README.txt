@@ -57,4 +57,5 @@ is running. These shell scripts should also have some documentation explaining w
 will also echo out information about the VM once it is done being set up.
 
 the two website config files display.conf and upload.conf define the directories to find the 
-php pages to display to the user. The sql file dbsetup.sql 
+php pages to display to the user. The sql file dbsetup.sql defines the database schema and inserts some
+data into said database
