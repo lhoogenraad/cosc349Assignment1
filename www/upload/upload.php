@@ -14,7 +14,7 @@
         <input type="text" name="question" id="question" placeholder="Question" required>
         <input type="text" name="answer" id="answer" placeholder="Your answer" required>
         <input type="text" name="username" id="username" placeholder="Username (optional)">
-        <button type="submit" id="submit" value="Submit">
+        <button type="submit" id="submit" value="Submit"></button>
       </form>
       <a href="http://127.0.0.1:8080/index.php">Back to Home</a>
       
