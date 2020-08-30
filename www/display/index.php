@@ -30,6 +30,6 @@ while($row = $q->fetch()){
 }
 ?>
 </table>
-
+<a href="http://127.0.0.1:8090/upload.php">Upload an Answer</a>
 </body>
 </html>

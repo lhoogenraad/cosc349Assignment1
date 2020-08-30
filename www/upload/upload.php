@@ -10,8 +10,7 @@
 
 <h1>Upload an Answer</h1>
 
-</table>
-
+<a href="http://127.0.0.1:8080/index.php">Back to Home</a>
 </body>
 </html>
 
