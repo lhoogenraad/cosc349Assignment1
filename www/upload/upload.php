@@ -42,7 +42,7 @@
       $question = $form['question'];
       $answer = $form['answer'];
       $username = $form['username'];
-        
+
       $result = $stmt->execute([$code, $year, $question, $answer, $username]);
     ?>
    </body>
