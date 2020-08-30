@@ -18,7 +18,25 @@
         <input type="submit" id="submit" value="Submit">
       </form>
       <a href="http://127.0.0.1:8080/index.php">Back to Home</a>
-    </body>
+      
+      <?php
+        $db_host = '192.168.2.12';
+        $db_name = 'examanswers';
+        $db_user = 'webuser';
+        $db_passwd = 'db_pw';
+
+        $pdo_dsn = "mysql:host=$db_host;dbname=$db_name";
+
+        $pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
+        
+        $code = $_GET['code'];
+        $year = $_GET['year'];
+        $question = $_GET['question'];
+        $answer = $_GET['answer'];
+        $username = $_GET['username'];
+      ?>
+      
+   </body>
 </html>
 
 
