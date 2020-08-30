@@ -1,1 +1,0 @@
-{"virtualbox":{"/vagrant":{"group":"vagrant","mount_options":["dmode=775,fmode=777","uid=1000","gid=1000"],"guestpath":"/vagrant","hostpath":"/home/cshome/l/lhoogenraad/349/cosc349Assignment1","disabled":false,"__vagrantfile":true}}}
