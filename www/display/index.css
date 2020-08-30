@@ -3,8 +3,9 @@ th {
 }
 
 table{
-    width: 95%;
-	border-radius: 5px;
+	text-align: center;
+	width: 95%;
+	margin: auto;
 }
 
 table, th, td {
@@ -37,6 +38,6 @@ a{
 	background-color: #f9c000;
 	color: #333333;
 	padding: 2px 6px 2px 6px;
-	border: 1px solid #9aa1ff;
+	border: 2px solid #9aa1ff;
 	border-radius: 5px;
 }
