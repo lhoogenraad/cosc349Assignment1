@@ -1,4 +1,3 @@
-
     <?php
       $db_host = '192.168.2.12';
       $db_name = 'examanswers';
@@ -13,7 +12,7 @@
         This code uses prepared statements to prevent against sql injections
       */
         
-      $sql = "INSERT INTO answer VALUES(?,?,?,?,?)";
+      $sql = "INSERT INTO answers VALUES(?,?,?,?,?)";
       
       $stmt = $pdo->prepare($sql);
         
