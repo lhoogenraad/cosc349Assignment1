@@ -1,11 +1,17 @@
 apt-get update
 
 # This is a shell variable that contains the mysql root password
+# If for some reason you need to poke around in the mysql process on the dbserver VM,
+# run: "vagrant ssh dbserver"   to ssh onto the VM
+# run: "export MYSQL_PWD='admin_pw'" to create a shell variable called $MYSQL_PWD which will
+# be used when logging into the mysql process, then finally run:
+# "mysql -u root"     to log into the mysql process.
+# (Assuming you want to acess the database concerned with this system,
+# you should then run "use examanswers;" to use the correct database)
 export MYSQL_PWD='admin_pw'
 
 # These linues automatically answers set-up questions from installing the 
 # mysql package, which means our startup script isn't interrupted.
-
 echo "mysql-server mysql-server/root_password password $MYSQL_PWD" | debconf-set-selections 
 echo "mysql-server mysql-server/root_password_again password $MYSQL_PWD" | debconf-set-selections
 
