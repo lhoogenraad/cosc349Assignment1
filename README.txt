@@ -25,4 +25,15 @@ There are 3 VM's in this set up: dbserver, display and upload.
 The names are pretty self explanatory, the dbserver is responsible for hosting a mysql database
 that the other 2 VM's can connect to. The display VM provides a webpage on 127.0.0.1:8080/index.php that
 displays all the data entered by the users, and some dummy data that can be removed by commenting or
-deleting the insert statement block at the bottom of the dbsetup.sql file in the home directory
+deleting the insert statement block at the bottom of the dbsetup.sql file in the home directory.
+The upload server provides a webpage on 127.0.0.1:8090/upload.php which allows users to upload their exam
+answers to the db. It should be noted there is no validation/parsing what so over on the stuff users enter.
+
+All 3 VM's are connected to a private network (named private_network) on 192.168.2.x (x is of course based
+on which machine we're talking about). The addresses of the machines on this network are:
+
+dbserver: 192.168.2.12
+display: 192.168.2.11
+upload: 192.168.2.10
+
+
