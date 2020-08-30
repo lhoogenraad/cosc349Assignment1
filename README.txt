@@ -18,6 +18,7 @@ To use the service navigate to: 127.0.0.1:8080 in a browser
 
 
 
+
 For the developer:
 
 There are 3 VM's in this set up: dbserver, display and upload. 
@@ -29,6 +30,8 @@ deleting the insert statement block at the bottom of the dbsetup.sql file in the
 The upload server provides a webpage on 127.0.0.1:8090/upload.php which allows users to upload their exam
 answers to the db. It should be noted there is no validation/parsing what so over on the stuff users enter.
 
+
+-----      Network     -----
 All 3 VM's are connected to a private network (named private_network) on 192.168.2.x (x is of course based
 on which machine we're talking about). The addresses of the machines on this network are:
 
@@ -45,3 +48,13 @@ upload operates on the port 8090
 On each web page there is a link to the other web page, be aware that the href attribute of the <a> tag
 must be something like href="http://127.0.0.1:8080/index.php" and not href="127.0.0.1:8080/index.php", because
 the latter will not work correctly.
+
+
+-----     VM Configuration      -----
+The VM's are configured by the VagrantFile. In this file you should find comprehensive documentation on
+what each line of code is doing. The shell scripts define what the VM will do once it has been created and
+is running. These shell scripts should also have some documentation explaining what each line is doing, and
+will also echo out information about the VM once it is done being set up.
+
+the two website config files display.conf and upload.conf define the directories to find the 
+php pages to display to the user. The sql file dbsetup.sql 
