@@ -30,6 +30,12 @@ deleting the insert statement block at the bottom of the dbsetup.sql file in the
 The upload server provides a webpage on 127.0.0.1:8090/upload.php which allows users to upload their exam
 answers to the db. It should be noted there is no validation/parsing what so over on the stuff users enter.
 
+You are able to vagrant up designated machines, e.g. vagrant up dbserver display   would ignore booting up
+the upload VM.
+
+If you make changes to a running VM's webpage or schema, you can run vagrant reload machine_name to avoid recreating
+the entire machine. However if you make changes to the shell script you need to run vagrant destroy machine_name
+in order to affect those changes
 
 -----      Network     -----
 All 3 VM's are connected to a private network (named private_network) on 192.168.2.x (x is of course based
