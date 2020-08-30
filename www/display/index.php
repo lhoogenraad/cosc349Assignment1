@@ -4,18 +4,6 @@
   <link rel='icon' type='image/x-icon' href='/favicon.ico' />
   <link rel='stylesheet' href='index.css'>
   <title>Past Otago exam answers</title>
-<style>
-th { text-align: left; }
-
-table, th, td {
-border: 2px solid grey;
-border-collapse: collapse;
-}
-
-th, td {
-padding: 0.2em;
-}
-</style>
 </head>
 
 <body>
