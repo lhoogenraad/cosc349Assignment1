@@ -1,4 +1,4 @@
 ubuntu-xenial-16.04-cloudimg-console.log
 .vagrant
-.DS_STORE
-._.DS_STORE
+.DS_Store
+._.DS_Store
