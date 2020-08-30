@@ -3,7 +3,7 @@ CREATE TABLE answers (
 	year varchar(5) NOT NULL,
 	question varchar(5) NOT NULL,
 	answer varchar(250) NOT NULL,
-	username varchar(10)
+	username varchar(14)
 );
 
 INSERT INTO answers VALUES ('HIST106', '2019', '3', 'Metropolitan', 'HOOLE857');
