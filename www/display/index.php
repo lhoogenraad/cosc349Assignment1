@@ -37,7 +37,7 @@ $pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
 $q = $pdo->query("SELECT * FROM answers");
 
 while($row = $q->fetch()){
-  echo "<tr><td>".$row["code"]."</td><td>".$row["year"]."</td><td>".$row.["question"]."</td><td>".$row["answer"]."</td><td>".$row["username"]."</td></tr>\n";
+  echo "<tr><td>".$row["code"]."</td><td>".$row["year"]."</td><td>".$row["question"]."</td><td>".$row["answer"]."</td><td>".$row["username"]."</td></tr>\n";
 }
 ?>
 </table>
