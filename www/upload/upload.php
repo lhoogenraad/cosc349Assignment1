@@ -32,7 +32,7 @@
         This code uses prepared statements to prevent against sql injections
       */
         
-      $sql = "INSERT INTO answer VALUES(:code, :year, :question, :answer, :username)";
+      $sql = "INSERT INTO answer VALUES(?,?,?,?,?)";
       
       $stmt = $pdo->prepare($sql);
         
