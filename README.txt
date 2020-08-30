@@ -1,6 +1,10 @@
 # cosc349Assignment1
 A vagrant system where VM's interact to provide a localhost webservice
 
+
+For the user:
+
+
 University of Otago past exams aren't provided with answers, so when practicing for actual
 exams with these, students aren't able to be totally confident that their answers are correct.
 
@@ -10,3 +14,10 @@ The uploader also has the option to give their university username, but this is 
 
 To run this system run: vagrant up
 To use the service navigate to: 127.0.0.1:8080 in a browser
+
+
+
+
+For the developer:
+
+There are 3 VM's in this set up: dbserver, display and upload. 
