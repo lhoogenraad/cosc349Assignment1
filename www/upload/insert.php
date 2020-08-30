@@ -19,6 +19,10 @@
     The following code is in the interest of preventing any sql injections.
     We write out our sql insert code in $sqlcode with placeholders as ?'s.
     Then we bind our params to the prepared statement and execute it.
+    
+    Even though any sql injection couldn't reveal any sensitive data since
+    anything entered is publicly available, I'd still feel remiss if I didn't
+    use a prepared statement for an sql operation.
   */
   $sqlcode = "INSERT INTO answers VALUES(?,?,?,?,?)";
   
@@ -27,4 +31,8 @@
   $stmt->bind_param("sssss", $code, $year, $question, $answer, $username);
   
   $stmt->execute();
+  
+  //This line of code redirects the user to the homepage
+  header("Location: http://127.0.0.1:8080/index.php");
+  die();
 ?>
