@@ -1,0 +1,26 @@
+th { 
+	text-align: left; 
+}
+
+table, th, td {
+	border: 2px solid #9aa1ff;
+	border-collapse: collapse;
+	background-color: #ffedb2;
+}
+
+th, td {
+	padding: 0.2em;
+}
+
+
+h1{
+	text-align: center;
+	text-colour: #9aa1ff;
+	border: 3px solid #9aa1ff;
+	margin: auto;
+	width: 50%;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	background-color: #f9c000;
+	padding: 4px;
+}
