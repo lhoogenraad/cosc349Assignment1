@@ -37,3 +37,11 @@ display: 192.168.2.11
 upload: 192.168.2.10
 
 
+The two webserver VM's, display and upload, also port forward on 127.0.0.1 to provide their webservice:
+
+display operates on the port 8080
+upload operates on the port 8090
+
+On each web page there is a link to the other web page, be aware that the href attribute of the <a> tag
+must be something like href="http://127.0.0.1:8080/index.php" and not href="127.0.0.1:8080/index.php", because
+the latter will not work correctly.
