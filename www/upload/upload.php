@@ -50,12 +50,6 @@
       $username = $form['username'];
         
       $result = $stmt->execute();
-      // If our insert was succesful, return to home page
-      if($result){
-        header('Location: '.$http://127.0.0.1:8080/index.php);
-      }else{
-        echo 'Upload failed';
-      }
     ?>
    </body>
 </html>
