@@ -1,6 +1,8 @@
 # cosc349Assignment1
 A vagrant system where VM's interact to provide a localhost webservice
 
+@Author Leon Hoogenraad, University of Otago 2538994
+
 
 For the user:
 
