@@ -35,12 +35,6 @@
       $sql = "INSERT INTO answer VALUES(:code, :year, :question, :answer, :username)";
       
       $stmt = $pdo->prepare($sql);
-      
-      $stmt->bindParam(":code", $code);
-      $stmt->bindParam(":year", $year);
-      $stmt->bindParam(":question", $question);
-      $stmt->bindParam(":answer", $answer);
-      $stmt->bindParam(":username", $username);
         
       $form = $_POST;
       $code = $form['code'];
@@ -49,7 +43,7 @@
       $answer = $form['answer'];
       $username = $form['username'];
         
-      $result = $stmt->execute();
+      $result = $stmt->execute([$code, $year, $question, $answer, $username]);
     ?>
    </body>
 </html>
