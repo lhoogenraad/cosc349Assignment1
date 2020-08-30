@@ -43,3 +43,13 @@ a{
         border-radius: 5px;
 	
 }
+
+a:hover{ 
+        border: 2px solid #6c72bd;
+        background-color: #e0ad00;
+}
+
+a:onclick{ 
+        background-color: #ffe797;
+        border: 2px solid #adb3ff;
+}
