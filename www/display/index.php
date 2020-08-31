@@ -1,7 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <html>
 <head>
-  <link rel='icon' type='image/x-icon' href='/favicon.ico' />
   <link rel='stylesheet' href='index.css'>
   <title>Past Otago exam answers</title>
 </head>
