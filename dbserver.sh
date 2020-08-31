@@ -33,6 +33,7 @@ export MYSQL_PWD='db_pw'
 # Here we are copying our schema into mysql so that our tables
 # and data are created
 cat /vagrant/dbsetup.sql | mysql -u webuser examanswers
+echo Executing setup schema script for mysql now
 
 # This line makes it so mysql will listen to any network requests
 # (by default it will only listen for local network requests)
