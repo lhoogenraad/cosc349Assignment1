@@ -28,7 +28,9 @@
       $question = $_POST['question'];
       $answer = $_POST['answer'];
       $username = $_POST['username'];
-
+      $code = strtoupper($code);
+      $username = strtoupper($username);
+		
       $result = $stmt->execute([$code, $year, $question, $answer, $username]);
      
       // This line of code redirects the user to the home page, as leaving
