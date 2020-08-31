@@ -14,8 +14,13 @@ This webservice allows students to view answers other students have uploaded to 
 To upload an answer the following data must be given: paper code, exam year, exam question, and the answer to the question.
 The uploader also has the option to give their university username, but this is not required.
 
-To run this system run: vagrant up
-To use the service navigate to: 127.0.0.1:8080 in a browser
+To run this system run: vagrant up   (This will probably take 2-3 minutes)
+Once all the Virtual Machines have booted, navigate to: 127.0.0.1:8080 in a browser
+to use the webservice. 
+
+You can check that all the Virtual Machines are running by using: vagrant status
+If this gives the following output, all the machines should be running correctly:
+
 
 
 
@@ -67,3 +72,19 @@ will also echo out information about the VM once it is done being set up.
 the two website config files display.conf and upload.conf define the directories to find the 
 php pages to display to the user. The sql file dbsetup.sql defines the database schema and inserts some
 data into said database
+
+-----     Webpage layout      -----
+The webserver VM's serve webpages found in the www/ subdirectories. The display VM serves the index.php
+webpage in www/display/ directory.
+The upload VM serves the upload.php page in the www/upload/ directory.
+The CSS files in both directories define the look of their respective .php pages.
+
+In the www/upload directory there is also a php script called uploadToDB.php which is required
+due to how submitting HTML forms works. Essentially when the user correctly fills out the form info
+on upload.php, the user is redirected to http://127.0.0.1:8090/uploadToDB.php where the data is pulled from
+the form, put into a prepared statement and then is executed and the data is uploaded to the mysql server.
+
+At the very bottom of uploadToDB.php, there is a function call to redirect the user to the index page, as
+it's pretty awful practice to leave the user on the empty page meant for handling a form submission.
+
+
